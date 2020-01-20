@@ -7,22 +7,14 @@ package controladores;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 
 /**
  * FXML Controller class
  *
  * @author Henry
  */
-public class VistaPrincipalController implements Initializable {
-
-    @FXML
-    private Button a;
-
-    @FXML
-    private Button b;
+public class ControllerClienteEmpleado implements Initializable {
 
     /**
      * Initializes the controller class.

@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vistas;
+package controladores;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -20,29 +20,28 @@ import javafx.scene.control.TextArea;
 public class Controller_VerCasa implements Initializable {
     
     @FXML
-    private Label plantas_llenar;
+    private TextField plantas_llenar;
 
     @FXML
-    private Label esquinera_llenar;
-    
-    @FXML
-    private Label patio_llenar;
+    private TextField esquinera_llenar;
 
     @FXML
     private TextArea adicionales_llenar;
 
     @FXML
-    private Label banios_llenar;
+    private TextField banios_llenar;
 
     @FXML
-    private Label orientacion_llenar;
+    private TextField orientacion_llenar;
 
     @FXML
-    private Label metros_llenar;
+    private TextField patio_llenar;
 
     @FXML
-    private Label habitaciones_llenar;
+    private TextField metros_llenar;
 
+    @FXML
+    private TextField habitaciones_llenar;
     /**
      * Initializes the controller class.
      */

@@ -17,16 +17,18 @@ import javafx.stage.Stage;
  * @author Henry
  */
 public class ProyectoDiseñoSotfware extends Application {
-    
+
+    public static Stage stagePrincipal = new Stage();
+
     @Override
     public void start(Stage stage) throws Exception {
         File file = new File("src\\vistas\\VistaVerCasa.fxml");
         Parent root = FXMLLoader.load(file.toURI().toURL());
-        
+
         Scene scene = new Scene(root);
-        
-        stage.setScene(scene);
-        stage.show();
+
+        stagePrincipal.setScene(scene);
+        stagePrincipal.show();
     }
 
     /**
@@ -35,5 +37,5 @@ public class ProyectoDiseñoSotfware extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }

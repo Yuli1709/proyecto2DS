@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistas.Controller_VerCasa">
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.Controller_VerCasa">
    <children>
       <ImageView fitHeight="447.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -27,10 +27,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="metros_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
-               <font>
-                  <Font size="16.0" />
-               </font></Label>
+            <TextField fx:id="metros_llenar" />
          </children>
       </HBox>
       <HBox layoutX="14.0" layoutY="76.0" prefHeight="31.0" prefWidth="270.0">
@@ -40,11 +37,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="plantas_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
+            <TextField fx:id="plantas_llenar" />
          </children>
       </HBox>
       <HBox layoutX="14.0" layoutY="107.0" prefHeight="31.0" prefWidth="270.0">
@@ -54,11 +47,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="orientacion_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
+            <TextField fx:id="orientacion_llenar" />
          </children>
       </HBox>
       <HBox layoutX="14.0" layoutY="138.0" prefHeight="31.0" prefWidth="270.0">
@@ -68,11 +57,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="habitaciones_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
+            <TextField fx:id="habitaciones_llenar" />
          </children>
       </HBox>
       <HBox layoutX="14.0" layoutY="169.0" prefHeight="31.0" prefWidth="270.0">
@@ -82,11 +67,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="banios_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
+            <TextField fx:id="banios_llenar" />
          </children>
       </HBox>
       <HBox layoutX="14.0" layoutY="200.0" prefHeight="31.0" prefWidth="270.0">
@@ -96,11 +77,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="esquinera_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
+            <TextField fx:id="esquinera_llenar" />
          </children>
       </HBox>
       <HBox layoutX="14.0" layoutY="231.0" prefHeight="31.0" prefWidth="270.0">
@@ -110,11 +87,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="patio_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
+            <TextField fx:id="patio_llenar" />
          </children>
       </HBox>
       <HBox layoutX="457.0" layoutY="216.0" prefHeight="25.0" prefWidth="213.0">

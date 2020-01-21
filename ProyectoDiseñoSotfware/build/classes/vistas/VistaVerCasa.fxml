@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistas.Controller_VerCasa">
+   <children>
+      <ImageView fitHeight="447.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../recursos/ondo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="324.0" layoutY="14.0" prefHeight="31.0" prefWidth="62.0" text="Casas">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <HBox layoutX="14.0" layoutY="45.0" prefHeight="31.0" prefWidth="270.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="163.0" text="Metros Cuadrados : ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="metros_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="76.0" prefHeight="31.0" prefWidth="270.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="182.0" text="Números de Plantas : ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="plantas_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="107.0" prefHeight="31.0" prefWidth="270.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="115.0" text="Orientación : ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="orientacion_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="138.0" prefHeight="31.0" prefWidth="270.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="254.0" text="Número de Habitaciones : ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="habitaciones_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="169.0" prefHeight="31.0" prefWidth="270.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="163.0" text="Número de Baños : ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="banios_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="200.0" prefHeight="31.0" prefWidth="270.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="84.0" text="Esquinera : ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="esquinera_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="231.0" prefHeight="31.0" prefWidth="270.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="115.0" text="Patio Grande : ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="patio_llenar" prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="457.0" layoutY="216.0" prefHeight="25.0" prefWidth="213.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="81.0" text="Precio : $">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="262.0" prefHeight="120.0" prefWidth="425.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="107.0" text="Adicionales : ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="adicionales_llenar" prefHeight="120.0" prefWidth="332.0" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="448.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../recursos/diseñonuevacasa.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

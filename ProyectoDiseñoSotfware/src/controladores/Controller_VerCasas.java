@@ -7,35 +7,18 @@ package controladores;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 
 /**
  * FXML Controller class
  *
  * @author Henry
  */
-public class ControllerClienteEmpleado implements Initializable {
-    
+public class Controller_VerCasas implements Initializable {
     @FXML
-    private TextField usuario_txtfield;
-
-    @FXML
-    private Button ingresarUsuario;
-
-    @FXML
-    private PasswordField contrasenia_txtfield;
-
-    @FXML
-    void ingresar(ActionEvent event) {
-
-    }
-
-
+    private AnchorPane panel_casas;
     /**
      * Initializes the controller class.
      */

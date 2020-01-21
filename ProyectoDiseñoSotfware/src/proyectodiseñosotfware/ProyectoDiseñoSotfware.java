@@ -20,7 +20,7 @@ public class ProyectoDiseñoSotfware extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        File file = new File("src\\vistas\\VistaClienteEmpleado.fxml");
+        File file = new File("src\\vistas\\VistaVerCasa.fxml");
         Parent root = FXMLLoader.load(file.toURI().toURL());
         
         Scene scene = new Scene(root);

@@ -3,38 +3,45 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controladores;
+package vistas;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 
 /**
  * FXML Controller class
  *
  * @author Henry
  */
-public class ControllerClienteEmpleado implements Initializable {
+public class Controller_VerCasa implements Initializable {
     
     @FXML
-    private TextField usuario_txtfield;
+    private Label plantas_llenar;
 
     @FXML
-    private Button ingresarUsuario;
+    private Label esquinera_llenar;
+    
+    @FXML
+    private Label patio_llenar;
 
     @FXML
-    private PasswordField contrasenia_txtfield;
+    private TextArea adicionales_llenar;
 
     @FXML
-    void ingresar(ActionEvent event) {
+    private Label banios_llenar;
 
-    }
+    @FXML
+    private Label orientacion_llenar;
 
+    @FXML
+    private Label metros_llenar;
+
+    @FXML
+    private Label habitaciones_llenar;
 
     /**
      * Initializes the controller class.

@@ -1,11 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.ControllerClienteEmpleado">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="597.0" style="-fx-background-color: #d1d1d1;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controladores.ControllerClienteEmpleado">
+   <children>
+      <ImageView fitHeight="322.0" fitWidth="480.0" layoutX="-80.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../../recursos/kisspng-picture-frame-lovely-old-golden-frame-5a705260627b32.1132745115173105604034.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="262.0" fitWidth="249.0" layoutX="334.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../recursos/Captura_1.PNG" />
+         </image>
+      </ImageView>
+      <HBox layoutX="334.0" layoutY="239.0" prefHeight="23.0" prefWidth="249.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="98.0" text=" Usuario :">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usuario_txtfield" prefHeight="25.0" prefWidth="157.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="334.0" layoutY="271.0" prefHeight="23.0" prefWidth="249.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="111.0" text="Contraseña : ">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="contrasenia_txtfield" prefHeight="25.0" prefWidth="170.0" />
+         </children>
+      </HBox>
+      <Button fx:id="ingresarUsuario" layoutX="411.0" layoutY="327.0" mnemonicParsing="false" onAction="#ingresar" prefHeight="25.0" prefWidth="95.0" text="Ingresar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fitHeight="197.0" fitWidth="200.0" layoutX="60.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../recursos/imagenLogindeco.jpg" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
 </AnchorPane>

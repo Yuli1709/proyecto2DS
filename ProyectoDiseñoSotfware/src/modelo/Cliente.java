@@ -24,6 +24,8 @@ public class Cliente extends Usuario{
         this.casaDiseñada = new LinkedList<>();
     }
     
-    
+    public void diseñarCasa(){
+        
+    }
     
 }

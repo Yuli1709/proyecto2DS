@@ -27,7 +27,7 @@ public class ProyectoDiseñoSotfware extends Application {
 
         Scene scene = new Scene(root);
 
-        stagePrincipal.setScene(scene);
+        stagePrincipal.setScene(scene);       
         stagePrincipal.show();
     }
 

@@ -16,5 +16,8 @@ public class Administrador extends Empleado{
         super(usuario, contraseña, nombre, apellido, cedula, correo, domicilio, telefonoTrabajo, estadoCivil, numeroHijos);
     }
     
+    public void registrarEmpleado(){
+        
+    }
     
 }

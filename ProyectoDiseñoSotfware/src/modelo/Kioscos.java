@@ -23,9 +23,6 @@ public class Kioscos {
         this.direccion = direccion;
         this.centroComercial = centroComercial;
         usuarios = new LinkedList<>();
-    }
-    
-    
-    
+    }   
     
 }

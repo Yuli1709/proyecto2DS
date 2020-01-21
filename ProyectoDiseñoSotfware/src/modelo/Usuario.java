@@ -36,7 +36,9 @@ public class Usuario {
         this.numeroHijos = numeroHijos;
     }
 
-    
+    public void iniciarSesion(){
+        
+    }
      
      
      

@@ -14,7 +14,5 @@ public enum EstadoCivil {
     Casado,
     Viudo,
     Divorciado;
-    
-    
 
 }

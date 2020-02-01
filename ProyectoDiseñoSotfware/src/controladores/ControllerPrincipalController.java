@@ -5,13 +5,22 @@
  */
 package controladores;
 
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
+import static proyectodiseñosotfware.ProyectoDiseñoSotfware.cambioEscena;
+import static proyectodiseñosotfware.ProyectoDiseñoSotfware.stagePrincipal;
 
 /**
  * FXML Controller class
@@ -40,45 +49,44 @@ public class ControllerPrincipalController implements Initializable {
 
     @FXML
     void registrar(ActionEvent event) {
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\VistaRegistroCliente.fxml"));
+        stagePrincipal.setResizable(false);
+    }
+
+    @FXML
+    void iniciarSesionPrincipal(ActionEvent event) {
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\VistaClienteEmpleado.fxml"));
+        stagePrincipal.setResizable(false);
+    }
+
+    @FXML
+    void diseniarCasaCielo(Event event) {
 
     }
 
     @FXML
-    void inicioSesion(ActionEvent event) {
+    void diseniarCasaOasis(Event event) {
 
     }
 
     @FXML
-    void crearCielo(ActionEvent event) {
-
+    void diseniarCasaParaiso(Event event) {
     }
 
     @FXML
-    void crearOasis(ActionEvent event) {
-
+    void diseniarNuevaCasa(Event event) {
     }
 
-    @FXML
-    void CrearParaiso(ActionEvent event) {
-
-    }
-
-    @FXML
-    void crearParaiso(ActionEvent event) {
-
-    }
-
-    @FXML
-    void diseñar(ActionEvent event) {
-
-    }
 
     /**
      * Initializes the controller class.
+     *
+     * @param url
+     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+
     }
 
 }

@@ -111,7 +111,10 @@
                <font>
                   <Font size="15.0" />
                </font></Label>
-            <ComboBox fx:id="estadocivil_ComboBox" onAction="#funcion_comboBox" prefWidth="150.0" />
+            <ComboBox fx:id="estadocivil_ComboBox" onAction="#funcion_comboBox" prefWidth="150.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
          </children>
       </HBox>
       <HBox layoutX="92.0" layoutY="308.0" prefHeight="25.0" prefWidth="294.0">
@@ -134,6 +137,34 @@
             <Font name="Algerian" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="registrar_boton" layoutX="441.0" layoutY="428.0" mnemonicParsing="false" onAction="#registrar" prefHeight="28.0" prefWidth="189.0" text="Registrar" />
+      <Button fx:id="registrar_boton" layoutX="571.0" layoutY="430.0" mnemonicParsing="false" onAction="#registrar" prefHeight="28.0" prefWidth="189.0" text="Registrar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <HBox layoutX="91.0" layoutY="407.0" prefHeight="25.0" prefWidth="393.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="90.0" text="Contraseña :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="contrasenia_texField" prefHeight="25.0" prefWidth="240.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="9.0" layoutY="439.0" prefHeight="25.0" prefWidth="412.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="255.0" text="Verificación Contraseña :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="verificacionContrasenia_txtField" prefHeight="25.0" prefWidth="322.0" />
+         </children>
+      </HBox>
+      <Button fx:id="retroceder_button_Registro" layoutX="748.0" layoutY="2.0" mnemonicParsing="false" onAction="#retroceder" text="Retroceder">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>

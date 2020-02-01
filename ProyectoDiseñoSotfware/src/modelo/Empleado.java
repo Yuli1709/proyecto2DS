@@ -15,14 +15,6 @@ public class Empleado extends Usuario {
         super(usuario, contraseña, nombre, apellido, cedula, correo, domicilio, telefonoTrabajo, estadoCivil, numeroHijos);
     }
 
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
     public String getContraseña() {
         return contraseña;
     }
@@ -102,6 +94,5 @@ public class Empleado extends Usuario {
     public void setActivo(boolean activo) {
         this.activo = activo;
     }
-    
 
 }

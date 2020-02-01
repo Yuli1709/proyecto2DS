@@ -18,7 +18,7 @@ public class Cliente extends Usuario{
     protected boolean registrado;
 
     
-    public Cliente(String direccionTrabajo, String empresaTrabajo, String usuario, String contraseña, String nombre, String apellido, String cedula, String correo, String domicilio, String telefonoTrabajo, EstadoCivil estadoCivil, int numeroHijos) {
+    public Cliente(String direccionTrabajo,String usuario, String empresaTrabajo,  String contraseña, String nombre, String apellido, String cedula, String correo, String domicilio, String telefonoTrabajo, EstadoCivil estadoCivil, int numeroHijos) {
         super(usuario, contraseña, nombre, apellido, cedula, correo, domicilio, telefonoTrabajo, estadoCivil, numeroHijos);
         this.direccionTrabajo = direccionTrabajo;
         this.empresaTrabajo = empresaTrabajo;
@@ -58,62 +58,67 @@ public class Cliente extends Usuario{
         this.registrado = registrado;
     }
 
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
+    @Override
     public String getContraseña() {
         return contraseña;
     }
 
+    @Override
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
 
+    @Override
     public String getNombre() {
         return nombre;
     }
 
+    @Override
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    @Override
     public String getApellido() {
         return apellido;
     }
 
+    @Override
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
 
+    @Override
     public String getCedula() {
         return cedula;
     }
 
+    @Override
     public void setCedula(String cedula) {
         this.cedula = cedula;
     }
 
+    @Override
     public String getCorreo() {
         return correo;
     }
 
+    @Override
     public void setCorreo(String correo) {
         this.correo = correo;
     }
 
+    @Override
     public String getDomicilio() {
         return domicilio;
     }
 
+    @Override
     public void setDomicilio(String domicilio) {
         this.domicilio = domicilio;
     }
 
+    @Override
     public String getTelefonoTrabajo() {
         return telefonoTrabajo;
     }

@@ -5,27 +5,30 @@
  */
 package modelo;
 
-
-
 /**
  *
  * @author Henry
  */
 public class Usuario {
-     protected String usuario;
-     protected String contraseña;
-     protected String nombre;
-     protected String apellido;
-     protected String cedula;
-     protected  String correo;
-     protected  String domicilio;
-     protected  String telefonoTrabajo;
-     protected EstadoCivil estadoCivil;
-     protected int numeroHijos;
-     protected boolean activo=false;
 
-    public Usuario(String usuario, String contraseña, String nombre, String apellido, String cedula, String correo, String domicilio, String telefonoTrabajo, EstadoCivil estadoCivil, int numeroHijos) {
+    protected String usuario;
+    protected String contraseña;
+    protected String nombre;
+    protected String apellido;
+    protected String cedula;
+    protected String correo;
+    protected String domicilio;
+    protected String telefonoTrabajo;
+    protected EstadoCivil estadoCivil;
+    protected int numeroHijos;
+    protected boolean activo = false;
+
+    public Usuario(String usuario, String contraseña) {
         this.usuario = usuario;
+        this.contraseña = contraseña;
+    }
+    
+    public Usuario(String usuario, String contraseña, String nombre, String apellido, String cedula, String correo, String domicilio, String telefonoTrabajo, EstadoCivil estadoCivil, int numeroHijos) {
         this.contraseña = contraseña;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -35,15 +38,11 @@ public class Usuario {
         this.telefonoTrabajo = telefonoTrabajo;
         this.estadoCivil = estadoCivil;
         this.numeroHijos = numeroHijos;
-        this.activo=true;
+        this.activo = true;
     }
 
     public String getUsuario() {
         return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
     }
 
     public String getContraseña() {
@@ -125,18 +124,13 @@ public class Usuario {
     public void setActivo(boolean activo) {
         this.activo = activo;
     }
-    
-    public void diseñarCasa(){
-        
-    }
-    
 
-    public void iniciarSesion(){
-        
+    public void diseñarCasa() {
+
     }
-     
-     
-     
-     
-    
+
+    public void iniciarSesion() {
+
+    }
+
 }

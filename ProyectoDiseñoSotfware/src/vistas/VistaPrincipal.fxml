@@ -11,7 +11,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="651.0" prefWidth="1108.0" style="-fx-background-color: WHITE BLUE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.VistaPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="651.0" prefWidth="1108.0" style="-fx-background-color: WHITE BLUE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.ControllerPrincipalController">
    <children>
       <ImageView fitHeight="665.0" fitWidth="1203.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -24,39 +24,30 @@
          </font>
       </Label>
       <Button fx:id="registrarse" layoutX="953.0" layoutY="14.0" mnemonicParsing="false" onAction="#registrar" text="Registrarse" />
-      <Button fx:id="iniciarSesion" layoutX="1044.0" layoutY="14.0" mnemonicParsing="false" onAction="#inicioSesion" text="Iniciar Sesion" />
-      <ImageView fx:id="cielo" fitHeight="157.0" fitWidth="169.0" layoutX="142.0" layoutY="428.0" onMouseClicked="#crearCielo" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="iniciarSesion" layoutX="1044.0" layoutY="14.0" mnemonicParsing="false" onAction="#iniciarSesionPrincipal" text="Iniciar Sesion" />
+      <ImageView fx:id="cielo" fitHeight="157.0" fitWidth="169.0" layoutX="142.0" layoutY="428.0" onMouseClicked="#diseniarCasaCielo" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../recursos/casa1.PNG" />
          </image>
          <effect>
             <InnerShadow />
          </effect>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
       </ImageView>
-      <ImageView fx:id="oasis" fitHeight="150.0" fitWidth="210.0" layoutX="326.0" layoutY="432.0" onMouseClicked="#crearOasis" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="oasis" fitHeight="150.0" fitWidth="210.0" layoutX="326.0" layoutY="432.0" onMouseClicked="#diseniarCasaOasis" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../recursos/casa2.PNG" />
          </image>
          <effect>
             <InnerShadow />
          </effect>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
       </ImageView>
-      <ImageView fx:id="paraiso" fitHeight="119.0" fitWidth="250.0" layoutX="555.0" layoutY="459.0" onDragDetected="#CrearParaiso" onMouseClicked="#crearParaiso" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="paraiso" fitHeight="119.0" fitWidth="250.0" layoutX="555.0" layoutY="459.0" onMousePressed="#diseniarCasaParaiso" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../recursos/casa3.PNG" />
          </image>
          <effect>
             <InnerShadow radius="11.4825" width="26.93" />
          </effect>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
       </ImageView>
       <Label layoutX="396.0" layoutY="597.0" text="Oasis">
          <font>
@@ -79,16 +70,13 @@
             <Font name="FrankRuehl" size="20.0" />
          </font>
       </Label>
-      <ImageView fx:id="nuevoDisenio" fitHeight="111.0" fitWidth="144.0" layoutX="846.0" layoutY="454.0" onMouseClicked="#diseñar" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="nuevoDisenio" fitHeight="111.0" fitWidth="144.0" layoutX="846.0" layoutY="454.0" onMouseClicked="#diseniarNuevaCasa" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../recursos/diseñonuevacasa.jpg" />
          </image>
          <effect>
             <InnerShadow />
          </effect>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
       </ImageView>
       <Label layoutX="861.0" layoutY="581.0" text="Nuevo Diseño">
          <font>
@@ -101,9 +89,6 @@
          </font>
       </Label>
       <Label layoutX="47.0" layoutY="18.0" text="Acerca de Nosotros">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
          <font>
             <Font name="Footlight MT Light" size="12.0" />
          </font>

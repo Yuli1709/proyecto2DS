@@ -6,6 +6,7 @@
 package proyectodiseñosotfware;
 
 import java.io.File;
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,14 +20,23 @@ import javafx.stage.Stage;
 public class ProyectoDiseñoSotfware extends Application {
 
     public static Stage stagePrincipal = new Stage();
+    
+    public static Scene cambioEscena(String ruta) {
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(new File(ruta).toURI().toURL());
+        } catch (IOException ex) {
+        }
+        return new Scene(root);
+    }
 
     @Override
     public void start(Stage stage) throws Exception {
-        File file = new File("src\\vistas\\VistaVerCasa.fxml");
+        File file = new File("src\\vistas\\VistaPrincipal.fxml");
         Parent root = FXMLLoader.load(file.toURI().toURL());
 
         Scene scene = new Scene(root);
-
+        stagePrincipal.setResizable(false);
         stagePrincipal.setScene(scene);       
         stagePrincipal.show();
     }

@@ -12,17 +12,17 @@ import java.util.LinkedList;
  * @author Henry
  */
 public class Kioscos {
-    
+
     protected int numeroKiosco;
     protected String direccion;
-    protected String centroComercial; 
-    protected LinkedList<Usuario> usuarios;
+    protected String centroComercial;
+    public static LinkedList<Usuario> usuarios = new LinkedList<>();
 
     public Kioscos(int numeroKiosco, String direccion, String centroComercial) {
         this.numeroKiosco = numeroKiosco;
         this.direccion = direccion;
         this.centroComercial = centroComercial;
         usuarios = new LinkedList<>();
-    }   
-    
+    }
+
 }

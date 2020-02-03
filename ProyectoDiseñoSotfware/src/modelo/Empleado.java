@@ -11,6 +11,10 @@ package modelo;
  */
 public class Empleado extends Usuario {
 
+    public Empleado(String usuario, String contraseña) {
+        super(usuario, contraseña);
+    }
+
     public Empleado(String usuario, String contraseña, String nombre, String apellido, String cedula, String correo, String domicilio, String telefonoTrabajo, EstadoCivil estadoCivil, int numeroHijos) {
         super(usuario, contraseña, nombre, apellido, cedula, correo, domicilio, telefonoTrabajo, estadoCivil, numeroHijos);
     }

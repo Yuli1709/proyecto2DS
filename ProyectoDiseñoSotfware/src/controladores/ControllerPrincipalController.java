@@ -5,18 +5,16 @@
  */
 package controladores;
 
-import java.io.File;
-import java.io.IOException;
+import builderModular.CasaDirector;
+import builderModular.Cielo_Builder;
+import builderModular.Oasis_Builder;
+import builderModular.Paraiso_Builder;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import static proyectodiseñosotfware.ProyectoDiseñoSotfware.cambioEscena;
@@ -55,32 +53,47 @@ public class ControllerPrincipalController implements Initializable {
 
     @FXML
     void iniciarSesionPrincipal(ActionEvent event) {
-        stagePrincipal.setScene(cambioEscena("src\\vistas\\VistaClienteEmpleado.fxml"));
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\Vista_ClienteEmpleado.fxml"));
         stagePrincipal.setResizable(false);
     }
 
     @FXML
     void diseniarCasaCielo(Event event) {
-
+        CasaDirector casaCielo = new CasaDirector(new Cielo_Builder());
+        casaCielo.construirCasa();
+        Vista_casaIndividualController.casa = casaCielo.getCasa();
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\vista_DecoradoraCasa.fxml"));
+        stagePrincipal.setResizable(false);
     }
 
     @FXML
     void diseniarCasaOasis(Event event) {
-
+        CasaDirector casaOasis = new CasaDirector(new Oasis_Builder());
+        casaOasis.construirCasa();
+        Vista_casaIndividualController.casa = casaOasis.getCasa();
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\vista_DecoradoraCasa.fxml"));
+        stagePrincipal.setResizable(false);
+        
     }
 
     @FXML
     void diseniarCasaParaiso(Event event) {
+        CasaDirector casaParaiso = new CasaDirector(new Paraiso_Builder());
+        casaParaiso.construirCasa();
+        Vista_casaIndividualController.casa = casaParaiso.getCasa();
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\vista_DecoradoraCasa.fxml"));
+        stagePrincipal.setResizable(false);
     }
 
     @FXML
     void diseniarNuevaCasa(Event event) {
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\VistaVerCasa.fxml"));
+        stagePrincipal.setResizable(false);
     }
 
 
     /**
      * Initializes the controller class.
-     *
      * @param url
      * @param rb
      */

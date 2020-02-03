@@ -15,6 +15,10 @@ public class Vendedor extends Empleado {
         super(usuario, contraseña, nombre, apellido, cedula, correo, domicilio, telefonoTrabajo, estadoCivil, numeroHijos);
     }
 
+    public Vendedor(String usuario, String contraseña) {
+        super(usuario, contraseña);
+    }
+
     public void revisarDatosClientes() {
 
     }

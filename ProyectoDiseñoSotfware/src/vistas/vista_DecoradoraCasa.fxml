@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.Controller_Vista_DecoradoraCasa">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="756.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../recursos/ondo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="casa" layoutX="26.0" layoutY="41.0" prefHeight="409.0" prefWidth="277.0" />
+      <Label layoutX="348.0" layoutY="20.0" text="Casa">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="verPrecio" layoutX="563.0" layoutY="407.0" mnemonicParsing="false" onAction="#verPrecioGuardar" text="Ver Precio y Guardar" />
+      <VBox layoutX="358.0" layoutY="106.0" prefHeight="262.0" prefWidth="323.0">
+         <children>
+            <Label text="Piso:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="25.0" prefWidth="354.0">
+               <children>
+                  <RadioButton fx:id="nacional_piso" mnemonicParsing="false" prefHeight="17.0" prefWidth="172.0" text="Porcelanato nacional" />
+                  <RadioButton fx:id="importado_piso" mnemonicParsing="false" text="Porcelanato importado" />
+               </children>
+            </HBox>
+            <Label text="Grifería">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="25.0" prefWidth="354.0">
+               <children>
+                  <RadioButton fx:id="estandarGriferia" mnemonicParsing="false" prefHeight="17.0" prefWidth="172.0" text="Estandar" />
+                  <RadioButton fx:id="italianaGriferia" mnemonicParsing="false" text="Italiana" />
+               </children>
+            </HBox>
+            <Label prefHeight="27.0" prefWidth="113.0" text="Iluminación">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="25.0" prefWidth="354.0">
+               <children>
+                  <RadioButton fx:id="tradicional_iluminacion" mnemonicParsing="false" prefHeight="17.0" prefWidth="172.0" text="Tradicional" />
+                  <RadioButton fx:id="led_iluminacion" mnemonicParsing="false" text="led" />
+               </children>
+            </HBox>
+            <Label prefHeight="27.0" prefWidth="113.0" text="Otros.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="baniosInsonorizados" mnemonicParsing="false" text="Baños insonorizados" />
+            <CheckBox fx:id="aislanteTermico" mnemonicParsing="false" text="Aislante térmico en el techo" />
+         </children>
+      </VBox>
+      <Button fx:id="retrocede" layoutX="648.0" layoutY="14.0" mnemonicParsing="false" onAction="#retroceder" prefHeight="25.0" prefWidth="81.0" text="Retroceder" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="506.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controladores.Vista_vendedorController">
+   <children>
+      <ImageView fitHeight="347.0" fitWidth="512.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../recursos/ondo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="diseniarCasa_buton" fitHeight="134.0" fitWidth="139.0" layoutX="82.0" layoutY="126.0" onMouseClicked="#diseniar_nuevaCasa" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../recursos/diseñonuevacasa.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="101.0" layoutY="240.0" text="Diseñar nueva casa" />
+      <ImageView fx:id="clientes" fitHeight="111.0" fitWidth="139.0" layoutX="323.0" layoutY="122.0" onMouseClicked="#ver_clientes" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../recursos/usuario.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="356.0" layoutY="240.0" prefHeight="17.0" prefWidth="47.0" text="Clientes" />
+      <Label layoutX="202.0" layoutY="33.0" text="Vendedor">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

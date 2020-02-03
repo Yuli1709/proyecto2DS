@@ -77,7 +77,7 @@ public class Controller_RegistroCliente implements Initializable {
 
     @FXML
     void retroceder(ActionEvent event) {
-        stagePrincipal.setScene(cambioEscena("src\\vistas\\VistaPrincipal.fxml"));
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\Vista_principal.fxml"));
     }
 
     @FXML
@@ -111,6 +111,8 @@ public class Controller_RegistroCliente implements Initializable {
 
     /**
      * Initializes the controller class.
+     * @param url
+     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {

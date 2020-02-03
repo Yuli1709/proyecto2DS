@@ -15,8 +15,10 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import modelo.Cliente;
 import modelo.Kioscos;
 import modelo.Usuario;
+import modelo.Vendedor;
 import static proyectodiseñosotfware.ProyectoDiseñoSotfware.cambioEscena;
 import static proyectodiseñosotfware.ProyectoDiseñoSotfware.stagePrincipal;
 
@@ -41,19 +43,22 @@ public class ControllerClienteEmpleado implements Initializable {
 
     @FXML
     void retroceder(ActionEvent event) {
-        stagePrincipal.setScene(cambioEscena("src\\vistas\\VistaPrincipal.fxml"));
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\Vista_principal.fxml"));
     }
 
     @FXML
     void ingresar(ActionEvent event) {
         boolean val = true;
-        boolean textoValidacion = usuario_txtfield.getText().length() != 0 && contrasenia_txtfield.getText().length() < 8;
+        boolean textoValidacion = usuario_txtfield.getText().length() != 0 && contrasenia_txtfield.getText().length() >= 8;
         List<Usuario> users = Kioscos.usuarios;
+        users.add(new Cliente("cliente", "cliente"));
+        users.add(new Vendedor("vendedor", "vendedor"));
         users.add(new Usuario("administrador", "administrador"));
         int i = 0;
         while (val && textoValidacion) {
             if (users.get(i).getUsuario().equals(usuario_txtfield.getText()) && users.get(i).getContraseña().equals(contrasenia_txtfield.getText())) {
                 Usuario u = users.get(i);
+                ventanaUsuario(u);
                 val = false;
             } else {
                 i++;
@@ -70,8 +75,24 @@ public class ControllerClienteEmpleado implements Initializable {
 
     }
 
+    void ventanaUsuario(Usuario user) {
+        if (user instanceof Cliente) {
+            stagePrincipal.setScene(cambioEscena("src\\vistas\\vista_DecoradoraCasa.fxml"));
+            stagePrincipal.setResizable(false);
+        } else if (user instanceof Vendedor) {
+            stagePrincipal.setScene(cambioEscena("src\\vistas\\Vista_Vendedor.fxml"));
+            stagePrincipal.setResizable(false);
+        } else {
+            stagePrincipal.setScene(cambioEscena("src\\vistas\\vista_DecoradoraCasa.fxml"));
+            stagePrincipal.setResizable(false);
+        }
+    }
+
     /**
      * Initializes the controller class.
+     *
+     * @param url
+     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {

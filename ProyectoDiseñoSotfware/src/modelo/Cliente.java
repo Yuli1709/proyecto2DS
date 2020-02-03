@@ -17,6 +17,10 @@ public class Cliente extends Usuario{
     protected LinkedList<Casa> casaDiseñada;
     protected boolean registrado;
 
+    public Cliente(String usuario, String contraseña) {
+        super(usuario, contraseña);
+    }
+
     
     public Cliente(String direccionTrabajo,String usuario, String empresaTrabajo,  String contraseña, String nombre, String apellido, String cedula, String correo, String domicilio, String telefonoTrabajo, EstadoCivil estadoCivil, int numeroHijos) {
         super(usuario, contraseña, nombre, apellido, cedula, correo, domicilio, telefonoTrabajo, estadoCivil, numeroHijos);

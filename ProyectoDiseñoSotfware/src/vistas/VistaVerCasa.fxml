@@ -15,12 +15,61 @@
             <Image url="@../../recursos/ondo.png" />
          </image>
       </ImageView>
-      <Label layoutX="324.0" layoutY="14.0" prefHeight="31.0" prefWidth="62.0" text="Casas">
+      <VBox layoutX="377.0" layoutY="54.0" prefHeight="262.0" prefWidth="323.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="226.0" text="Adicionales">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label text="Piso:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="25.0" prefWidth="354.0">
+               <children>
+                  <RadioButton fx:id="nacional_piso" mnemonicParsing="false" prefHeight="17.0" prefWidth="172.0" text="Porcelanato nacional" />
+                  <RadioButton fx:id="importado_piso" mnemonicParsing="false" text="Porcelanato importado" />
+               </children>
+            </HBox>
+            <Label text="Grifería">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="25.0" prefWidth="354.0">
+               <children>
+                  <RadioButton fx:id="estandarGriferia" mnemonicParsing="false" prefHeight="17.0" prefWidth="172.0" text="Estandar" />
+                  <RadioButton fx:id="italianaGriferia" mnemonicParsing="false" text="Italiana" />
+               </children>
+            </HBox>
+            <Label prefHeight="27.0" prefWidth="113.0" text="Iluminación">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="25.0" prefWidth="354.0">
+               <children>
+                  <RadioButton fx:id="tradicional_iluminacion" mnemonicParsing="false" prefHeight="17.0" prefWidth="172.0" text="Tradicional" />
+                  <RadioButton fx:id="led_iluminacion" mnemonicParsing="false" text="led" />
+               </children>
+            </HBox>
+            <Label prefHeight="27.0" prefWidth="113.0" text="Otros.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="baniosInsonorizados" mnemonicParsing="false" text="Baños insonorizados" />
+            <CheckBox fx:id="aislanteTermico" mnemonicParsing="false" text="Aislante térmico en el techo" />
+         </children>
+      </VBox>
+      <Label layoutX="294.0" layoutY="14.0" prefHeight="31.0" prefWidth="149.0" text="Nuevo Diseño">
          <font>
             <Font size="21.0" />
          </font>
       </Label>
-      <HBox layoutX="14.0" layoutY="45.0" prefHeight="31.0" prefWidth="270.0">
+      <HBox layoutX="14.0" layoutY="45.0" prefHeight="31.0" prefWidth="325.0">
          <children>
             <Label prefHeight="25.0" prefWidth="163.0" text="Metros Cuadrados : ">
                <font>
@@ -30,34 +79,34 @@
             <TextField fx:id="metros_llenar" />
          </children>
       </HBox>
-      <HBox layoutX="14.0" layoutY="76.0" prefHeight="31.0" prefWidth="270.0">
+      <HBox layoutX="14.0" layoutY="76.0" prefHeight="31.0" prefWidth="312.0">
          <children>
             <Label prefHeight="25.0" prefWidth="182.0" text="Números de Plantas : ">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField fx:id="plantas_llenar" />
+            <ComboBox fx:id="plantas" prefWidth="150.0" />
          </children>
       </HBox>
-      <HBox layoutX="14.0" layoutY="107.0" prefHeight="31.0" prefWidth="270.0">
+      <HBox layoutX="14.0" layoutY="107.0" prefHeight="31.0" prefWidth="312.0">
          <children>
             <Label prefHeight="25.0" prefWidth="115.0" text="Orientación : ">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField fx:id="orientacion_llenar" />
+            <ComboBox fx:id="orientacion" prefWidth="150.0" />
          </children>
       </HBox>
-      <HBox layoutX="14.0" layoutY="138.0" prefHeight="31.0" prefWidth="270.0">
+      <HBox layoutX="14.0" layoutY="138.0" prefHeight="31.0" prefWidth="354.0">
          <children>
             <Label prefHeight="25.0" prefWidth="254.0" text="Número de Habitaciones : ">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField fx:id="habitaciones_llenar" />
+            <ComboBox fx:id="habitaciones_num" prefWidth="150.0" visibleRowCount="20" />
          </children>
       </HBox>
       <HBox layoutX="14.0" layoutY="169.0" prefHeight="31.0" prefWidth="270.0">
@@ -67,7 +116,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField fx:id="banios_llenar" />
+            <ComboBox fx:id="num_banios" prefWidth="150.0" visibleRowCount="20" />
          </children>
       </HBox>
       <HBox layoutX="14.0" layoutY="200.0" prefHeight="31.0" prefWidth="270.0">
@@ -77,7 +126,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField fx:id="esquinera_llenar" />
+            <ComboBox fx:id="esquinera" prefWidth="150.0" visibleRowCount="20" />
          </children>
       </HBox>
       <HBox layoutX="14.0" layoutY="231.0" prefHeight="31.0" prefWidth="270.0">
@@ -87,16 +136,11 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField fx:id="patio_llenar" />
+            <ComboBox fx:id="patioGrande" prefWidth="150.0" visibleRowCount="20" />
          </children>
       </HBox>
       <HBox layoutX="457.0" layoutY="216.0" prefHeight="25.0" prefWidth="213.0">
          <children>
-            <Label prefHeight="25.0" prefWidth="81.0" text="Precio : $">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
             <Label prefHeight="22.0" prefWidth="133.0" textAlignment="RIGHT">
                <font>
                   <Font size="16.0" />
@@ -104,20 +148,17 @@
             </Label>
          </children>
       </HBox>
-      <HBox layoutX="14.0" layoutY="262.0" prefHeight="120.0" prefWidth="425.0">
-         <children>
-            <Label prefHeight="25.0" prefWidth="107.0" text="Adicionales : ">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
-            <TextArea fx:id="adicionales_llenar" prefHeight="120.0" prefWidth="332.0" />
-         </children>
-      </HBox>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="448.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../recursos/diseñonuevacasa.jpg" />
          </image>
       </ImageView>
+      <Label layoutX="234.0" layoutY="350.0" prefHeight="25.0" prefWidth="81.0" text="Precio : $">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="guardarVerPrecio" layoutX="513.0" layoutY="363.0" mnemonicParsing="false" onAction="#guardarGenerarPrecio" text="Guardar y ver Precio" />
+      <Button fx:id="retrocede" layoutX="600.0" layoutY="14.0" mnemonicParsing="false" onAction="#retroceder" text="Retroceder" />
    </children>
 </AnchorPane>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.Vista_casaIndividualController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="398.0" AnchorPane.bottomAnchor="-20.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-23.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="imagen" fitHeight="129.0" fitWidth="200.0" layoutX="105.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/casas.jpg" />
+               </image></ImageView>
+            <VBox layoutX="14.0" layoutY="175.0" prefHeight="211.0" prefWidth="387.0">
+               <children>
+                  <HBox prefHeight="29.0" prefWidth="370.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="196.0" text="Metros Cuadrados :">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="29.0" prefWidth="27.0" />
+                        <Label fx:id="metros" text="Metros Cuadrados :">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="29.0" prefWidth="401.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="196.0" text="Número de  habitaciones :">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="29.0" prefWidth="27.0" />
+                        <Label fx:id="numeroHabitaciones_Label" text="numero">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="29.0" prefWidth="370.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="196.0" text="Número de Plantas  :">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="29.0" prefWidth="27.0" />
+                        <Label fx:id="plantas_label" text="plantas">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="29.0" prefWidth="370.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="196.0" text="Orientación  :">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="29.0" prefWidth="27.0" />
+                        <Label fx:id="orientacion_label" text="orientacion">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="29.0" prefWidth="370.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="196.0" text="Número de Baños :">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="29.0" prefWidth="27.0" />
+                        <Label fx:id="banios_label" text="banios">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="29.0" prefWidth="370.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="196.0" text="Esquinera :">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="29.0" prefWidth="27.0" />
+                        <Label fx:id="esquinera_label" text="esquinera">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="29.0" prefWidth="370.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="196.0" text="Patio grande :">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="29.0" prefWidth="27.0" />
+                        <Label fx:id="patio_label" text="patio :">
+                           <font>
+                              <Font name="Bell MT" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label fx:id="casa_label" layoutX="155.0" layoutY="143.0" text="casa">
+               <font>
+                  <Font name="Bell MT" size="19.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <effect>
+            <Blend />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

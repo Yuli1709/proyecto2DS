@@ -5,11 +5,13 @@
  */
 package modelo;
 
+import Decorador.CasaInterfaz;
+
 /**
  *
  * @author Henry
  */
-public class Casa {
+public class Casa implements CasaInterfaz{
     protected double metrosCuadrados;
     protected int numeroPlantas;
     protected boolean esquinera;
@@ -128,6 +130,11 @@ public class Casa {
 
     public void setRutaImagen(String rutaImagen) {
         this.rutaImagen = rutaImagen;
+    }
+
+    @Override
+    public void adornar() {
+        System.out.println("SE agrego una nueva decotacion");
     }
     
     

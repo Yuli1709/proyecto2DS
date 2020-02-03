@@ -3,10 +3,55 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Henry/Documents/MEGA/2s/computacion/diseño%20de%20software/proyecto2DS/ProyectoDiseñoSotfware/src/controladores/ControllerPrincipalController.java</file>
-            <file>file:/C:/Users/Henry/Documents/MEGA/2s/computacion/diseño%20de%20software/proyecto2DS/ProyectoDiseñoSotfware/src/controladores/Vista_vendedorController.java</file>
-            <file>file:/C:/Users/Henry/Documents/MEGA/2s/computacion/diseño%20de%20software/proyecto2DS/ProyectoDiseñoSotfware/src/controladores/Controller_Vista_DecoradoraCasa.java</file>
-            <file>file:/C:/Users/Henry/Documents/MEGA/2s/computacion/diseño%20de%20software/proyecto2DS/ProyectoDiseñoSotfware/src/vistas/vista_DecoradoraCasa.fxml</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/Nacional.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/vistas/VistaDiseñarCasa.fxml</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/controladores/Controller_RegistroCliente.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/CasaInterfaz.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/ConexionBD_Singleton/Conexion.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/test/ConexionBD_Singleton/ConexionNGTest.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/Italiana.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/vistas/Vista_vendedor.fxml</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/vistas/Vista_principal.fxml</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/Led.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/Iluminacion.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/vistas/VistaVerCasas.fxml</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/controladores/ControllerClienteEmpleado.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/controladores/Vista_vendedorController.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/modelo/EstadoCivil.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/modelo/Kioscos.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/modelo/Administrador.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/PisosPorcelanato.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/controladores/Controller_VerCasa.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/builderModular/CasaDirector.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/AislanteTermico.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/modelo/Vendedor.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/aspectos/NewJApplet.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/vistas/Vista_ClienteEmpleado.fxml</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/controladores/Vista_listaClientes_VendedorController.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/modelo/Empleado.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/Tradicional.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/controladores/Controller_VerCasas.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/builderModular/Cielo_Builder.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/proyectodiseñosotfware/ProyectoDiseñoSotfware.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/modelo/Adicional.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/Importado.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/builderModular/Paraiso_Builder.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/Griferia.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/BañosInsonorizados.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/controladores/Controller_Vista_DecoradoraCasa.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/modelo/Orientacion.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/modelo/Cliente.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/test/modelo/UsuarioNGTest.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/vistas/vista_DecoradoraCasa.fxml</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/builderModular/Oasis_Builder.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/controladores/ControllerPrincipalController.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/test/builderModular/Cielo_BuilderNGTest.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/controladores/Vista_casaIndividualController.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/Decorador/Estandar.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/modelo/Usuario.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/modelo/Casa.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/builderModular/CasaBuilder.java</file>
+            <file>file:/C:/Users/Juan%20Jose/Documents/NetBeansProjects/proyecto2DSOF/ProyectoDiseñoSotfware/src/vistas/VistaRegistroCliente.fxml</file>
         </group>
     </open-files>
 </project-private>

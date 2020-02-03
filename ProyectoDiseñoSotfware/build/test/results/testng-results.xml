@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ProyectoDiseñoSotfware" duration-ms="18" started-at="2020-02-03T09:35:53Z" finished-at="2020-02-03T09:35:53Z">
+    <groups>
+    </groups>
+    <test name="TestNG tests" duration-ms="18" started-at="2020-02-03T09:35:53Z" finished-at="2020-02-03T09:35:53Z">
+      <class name="ConexionBD_Singleton.ConexionNGTest">
+        <test-method status="FAIL" signature="testGetConexion()[pri:0, instance:ConexionBD_Singleton.ConexionNGTest@6d86b085]" name="testGetConexion" duration-ms="8" started-at="2020-02-03T04:35:53Z" finished-at="2020-02-03T04:35:53Z">
+          <exception class="java.sql.SQLException">
+            <message>
+              <![CDATA[No suitable driver found for jdbc:mysql://127.0.0.1:3309/my_Home]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLException: No suitable driver found for jdbc:mysql://127.0.0.1:3309/my_Home
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ConexionBD_Singleton.Conexion.getConexion(Conexion.java:41)
+	at ConexionBD_Singleton.ConexionNGTest.testGetConexion(ConexionNGTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetConexion -->
+        <test-method status="PASS" signature="testGetConnection()[pri:0, instance:ConexionBD_Singleton.ConexionNGTest@6d86b085]" name="testGetConnection" duration-ms="2" started-at="2020-02-03T04:35:53Z" finished-at="2020-02-03T04:35:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetConnection -->
+      </class> <!-- ConexionBD_Singleton.ConexionNGTest -->
+    </test> <!-- TestNG tests -->
+  </suite> <!-- ProyectoDiseñoSotfware -->
+</testng-results>

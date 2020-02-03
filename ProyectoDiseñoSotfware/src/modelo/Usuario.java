@@ -21,15 +21,20 @@ public class Usuario {
     protected String telefonoTrabajo;
     protected EstadoCivil estadoCivil;
     protected int numeroHijos;
-    protected boolean activo = false;
+    protected boolean activo;
 
     public Usuario(String usuario, String contraseña) {
         this.usuario = usuario;
         this.contraseña = contraseña;
     }
+
+   
+
     
-    public Usuario(String usuario, String contraseña, String nombre, String apellido, String cedula, String correo, String domicilio, String telefonoTrabajo, EstadoCivil estadoCivil, int numeroHijos) {
+
+    public Usuario(String usuario, String nombre, String apellido, String cedula, String correo, String domicilio, String telefonoTrabajo, EstadoCivil estadoCivil, int numeroHijos, String contraseña) {
         this.contraseña = contraseña;
+        this.usuario = usuario;
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;

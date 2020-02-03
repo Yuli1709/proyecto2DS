@@ -30,7 +30,7 @@ import static proyectodiseñosotfware.ProyectoDiseñoSotfware.stagePrincipal;
  * @author Henry
  */
 public class Controller_Vista_DecoradoraCasa implements Initializable {
-    
+
     @FXML
     private RadioButton nacional_piso;
 
@@ -60,34 +60,86 @@ public class Controller_Vista_DecoradoraCasa implements Initializable {
 
     @FXML
     private CheckBox aislanteTermico;
-    
+
     @FXML
     private Button retrocede;
-    
+
     @FXML
     void retroceder(ActionEvent event) {
         stagePrincipal.setScene(cambioEscena("src\\vistas\\Vista_principal.fxml"));
     }
 
-
     @FXML
     void verPrecioGuardar(ActionEvent event) {
+        // si inicio sesion
 
+    }
+
+
+    @FXML
+    void nacional(ActionEvent event) {
+
+    }
+
+    @FXML
+    void importado(ActionEvent event) {
+        System.out.println("xx");
+    }
+
+    @FXML
+    void estandar(ActionEvent event) {
+
+    }
+
+    @FXML
+    void italiana(ActionEvent event) {
+
+    }
+
+    @FXML
+    void tradicional(ActionEvent event) {
+
+    }
+
+    @FXML
+    void led(ActionEvent event) {
+
+    }
+
+    @FXML
+    void baños(ActionEvent event) {
+
+    }
+
+    @FXML
+    void techo(ActionEvent event) {
+
+    }
+
+    boolean validacion() {
+        boolean piso = importado_piso.isPressed();
+        
+//        if () {
+//            return true;
+//        }
+        return false;
     }
 
     /**
      * Initializes the controller class.
+     *
      * @param url
      * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        validacion();
         File file = new File("src\\vistas\\Vista_casaIndividual.fxml");
         try {
             Parent root = FXMLLoader.load(file.toURI().toURL());
             casa.getChildren().add(root);
         } catch (Exception ex) {
-        } 
-    }    
-    
+        }
+    }
+
 }

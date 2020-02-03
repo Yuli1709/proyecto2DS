@@ -87,7 +87,7 @@ public class ControllerPrincipalController implements Initializable {
 
     @FXML
     void diseniarNuevaCasa(Event event) {
-        stagePrincipal.setScene(cambioEscena("src\\vistas\\VistaVerCasa.fxml"));
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\VistaDiseñarCasa.fxml"));
         stagePrincipal.setResizable(false);
     }
 

@@ -1,0 +1,6 @@
+projectKey=proyDS9:grupo9
+serverUrl=http://200.126.12.164
+serverVersion=6.7.6.38781
+dashboardUrl=http://200.126.12.164/dashboard/index/proyDS9:grupo9
+ceTaskId=AXAJOZQWn2b0NoJj1O-4
+ceTaskUrl=http://200.126.12.164/api/ce/task?id=AXAJOZQWn2b0NoJj1O-4

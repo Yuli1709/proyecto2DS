@@ -5,17 +5,27 @@
  */
 package controladores;
 
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 import modelo.Cliente;
+import modelo.EstadoCivil;
 import modelo.Kioscos;
 import modelo.Usuario;
 import modelo.Vendedor;
@@ -51,7 +61,9 @@ public class ControllerClienteEmpleado implements Initializable {
         boolean val = true;
         boolean textoValidacion = usuario_txtfield.getText().length() != 0 && contrasenia_txtfield.getText().length() >= 8;
         List<Usuario> users = Kioscos.usuarios;
-        users.add(new Cliente("cliente", "cliente"));
+        Cliente c = new Cliente("henry12", "henry", "siavichay", "cedula", "gmmail", "14 y 4", "0914589236", EstadoCivil.Casado, 0, "s","ss", true, "12345678");
+        
+        users.add(c);
         users.add(new Vendedor("vendedor", "vendedor"));
         users.add(new Usuario("administrador", "administrador"));
         int i = 0;
@@ -77,8 +89,22 @@ public class ControllerClienteEmpleado implements Initializable {
 
     void ventanaUsuario(Usuario user) {
         if (user instanceof Cliente) {
-            stagePrincipal.setScene(cambioEscena("src\\vistas\\vista_DecoradoraCasa.fxml"));
-            stagePrincipal.setResizable(false);
+            try {
+                Controller_VerCasas.cliente1 = (Cliente) user;
+                File file = new File("src\\vistas\\VistaVerCasas.fxml");
+                Parent root = FXMLLoader.load(file.toURI().toURL());
+                //root.getChildrenUnmodifiable().add(new Button("WS"));
+                Stage stage = new Stage();
+                Scene sc = new Scene(root);
+                stage.setScene(sc);
+                stage.show();
+                stagePrincipal.setScene(cambioEscena("src\\vistas\\vista_DecoradoraCasa.fxml"));
+                stagePrincipal.setResizable(false);
+            } catch (MalformedURLException ex) {
+                Logger.getLogger(ControllerClienteEmpleado.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IOException ex) {
+                Logger.getLogger(ControllerClienteEmpleado.class.getName()).log(Level.SEVERE, null, ex);
+            }
         } else if (user instanceof Vendedor) {
             stagePrincipal.setScene(cambioEscena("src\\vistas\\Vista_Vendedor.fxml"));
             stagePrincipal.setResizable(false);

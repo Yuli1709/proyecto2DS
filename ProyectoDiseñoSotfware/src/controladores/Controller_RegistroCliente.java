@@ -46,6 +46,9 @@ public class Controller_RegistroCliente implements Initializable {
     private TextField nombre_txtField;
 
     @FXML
+    private TextField usuario;
+
+    @FXML
     private TextField numeroHijos_txtField;
 
     @FXML
@@ -96,7 +99,7 @@ public class Controller_RegistroCliente implements Initializable {
         boolean correoDireccionvalidacion = direccion_txtField.getText() != null && correo_txtField.getText() != null;
         boolean contraseniaValidacion = contrasenia_texField.getText().length() == 8 && contrasenia_texField.getText().equals(verificacionContrasenia_txtField.getText());
         if (validacionNombre && cedulaValidacion && correoDireccionvalidacion && contraseniaValidacion) {
-            Cliente cliente = new Cliente(direccionTrabajo_txtField.getText(), empresaTrabajo_txtField.getText(), "dd", contrasenia_texField.getText(), nombre_txtField.getText(), apellidos_txtField.getText(), cedula_txtField.getText(), correo_txtField.getText(), direccionTrabajo_txtField.getText(), celular_txtField.getText(), estadocivil_ComboBox.getValue(), 0);
+            Cliente cliente = new Cliente(usuario.getText(), nombre_txtField.getText(), apellidos_txtField.getText(), cedula_txtField.getText(), correo_txtField.getText(), direccion_txtField.getText(), celular_txtField.getText(), estadocivil_ComboBox.getValue(), Integer.valueOf(numeroHijos_txtField.getText()), direccionTrabajo_txtField.getText(), empresaTrabajo_txtField.getText(), true, contrasenia_texField.getText());
             Kioscos.usuarios.add(cliente);
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -104,13 +107,13 @@ public class Controller_RegistroCliente implements Initializable {
             alert.setTitle("Campos imcompletos");
             alert.setHeaderText("debe llenar los campos");
             alert.show();
-
         }
-        System.out.println(Kioscos.usuarios.size());
+
     }
 
     /**
      * Initializes the controller class.
+     *
      * @param url
      * @param rb
      */

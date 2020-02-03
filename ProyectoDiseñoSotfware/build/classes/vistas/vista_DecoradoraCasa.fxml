@@ -31,8 +31,8 @@
             </Label>
             <HBox prefHeight="25.0" prefWidth="354.0">
                <children>
-                  <RadioButton fx:id="nacional_piso" mnemonicParsing="false" prefHeight="17.0" prefWidth="172.0" text="Porcelanato nacional" />
-                  <RadioButton fx:id="importado_piso" mnemonicParsing="false" text="Porcelanato importado" />
+                  <RadioButton fx:id="nacional_piso" mnemonicParsing="false" onAction="#nacional" prefHeight="17.0" prefWidth="172.0" text="Porcelanato nacional" />
+                  <RadioButton fx:id="importado_piso" mnemonicParsing="false" onAction="#importado" text="Porcelanato importado" />
                </children>
             </HBox>
             <Label text="Grifería">
@@ -42,8 +42,8 @@
             </Label>
             <HBox prefHeight="25.0" prefWidth="354.0">
                <children>
-                  <RadioButton fx:id="estandarGriferia" mnemonicParsing="false" prefHeight="17.0" prefWidth="172.0" text="Estandar" />
-                  <RadioButton fx:id="italianaGriferia" mnemonicParsing="false" text="Italiana" />
+                  <RadioButton fx:id="estandarGriferia" mnemonicParsing="false" onAction="#estandar" prefHeight="17.0" prefWidth="172.0" text="Estandar" />
+                  <RadioButton fx:id="italianaGriferia" mnemonicParsing="false" onAction="#italiana" text="Italiana" />
                </children>
             </HBox>
             <Label prefHeight="27.0" prefWidth="113.0" text="Iluminación">
@@ -53,8 +53,8 @@
             </Label>
             <HBox prefHeight="25.0" prefWidth="354.0">
                <children>
-                  <RadioButton fx:id="tradicional_iluminacion" mnemonicParsing="false" prefHeight="17.0" prefWidth="172.0" text="Tradicional" />
-                  <RadioButton fx:id="led_iluminacion" mnemonicParsing="false" text="led" />
+                  <RadioButton fx:id="tradicional_iluminacion" mnemonicParsing="false" onAction="#tradicional" prefHeight="17.0" prefWidth="172.0" text="Tradicional" />
+                  <RadioButton fx:id="led_iluminacion" mnemonicParsing="false" onAction="#led" text="led" />
                </children>
             </HBox>
             <Label prefHeight="27.0" prefWidth="113.0" text="Otros.">
@@ -62,8 +62,8 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <CheckBox fx:id="baniosInsonorizados" mnemonicParsing="false" text="Baños insonorizados" />
-            <CheckBox fx:id="aislanteTermico" mnemonicParsing="false" text="Aislante térmico en el techo" />
+            <CheckBox fx:id="baniosInsonorizados" mnemonicParsing="false" onAction="#baños" text="Baños insonorizados" />
+            <CheckBox fx:id="aislanteTermico" mnemonicParsing="false" onAction="#techo" text="Aislante térmico en el techo" />
          </children>
       </VBox>
       <Button fx:id="retrocede" layoutX="648.0" layoutY="14.0" mnemonicParsing="false" onAction="#retroceder" prefHeight="25.0" prefWidth="81.0" text="Retroceder" />

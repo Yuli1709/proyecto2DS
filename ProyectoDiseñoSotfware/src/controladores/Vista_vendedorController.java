@@ -29,12 +29,12 @@ public class Vista_vendedorController implements Initializable {
 
     @FXML
     void diseniar_nuevaCasa(Event event) {
-        stagePrincipal.setScene(cambioEscena("src\\vistas\\VistaVerCasa.fxml"));
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\VistaDiseñarCasa.fxml"));
     }
 
     @FXML
     void ver_clientes(Event event) {
-        stagePrincipal.setScene(cambioEscena("src\\vistas\\Vista_listaClientes_Vendedor.fxml"));
+        stagePrincipal.setScene(cambioEscena("src\\vistas\\Vista_ListaClientes_Vendedor.fxml"));
     }
     
     

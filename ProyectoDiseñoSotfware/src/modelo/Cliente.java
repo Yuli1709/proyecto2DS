@@ -21,14 +21,26 @@ public class Cliente extends Usuario{
         super(usuario, contraseña);
     }
 
-    
-    public Cliente(String direccionTrabajo,String usuario, String empresaTrabajo,  String contraseña, String nombre, String apellido, String cedula, String correo, String domicilio, String telefonoTrabajo, EstadoCivil estadoCivil, int numeroHijos) {
-        super(usuario, contraseña, nombre, apellido, cedula, correo, domicilio, telefonoTrabajo, estadoCivil, numeroHijos);
+
+    public Cliente(String usuario, String nombre, String apellido, String cedula, String correo, String domicilio, String telefonoTrabajo, EstadoCivil estadoCivil, int numeroHijos,String direccionTrabajo, String empresaTrabajo, boolean registrado,  String contraseña) {
+        super(usuario, nombre, apellido, cedula, correo, domicilio, telefonoTrabajo, estadoCivil, numeroHijos, contraseña);
         this.direccionTrabajo = direccionTrabajo;
         this.empresaTrabajo = empresaTrabajo;
         this.casaDiseñada = new LinkedList<>();
-        this.registrado=false;
+        this.registrado = registrado;
     }
+
+    @Override
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    
+    
 
     public String getDireccionTrabajo() {
         return direccionTrabajo;
@@ -155,12 +167,13 @@ public class Cliente extends Usuario{
         this.activo = activo;
     }
     
-    public void diseñarCasa(){
+    public void diseñarCasa(Casa c){
+        casaDiseñada.add(c);
         
     }
     
     public void registrarse(){
-        
+        Kioscos.usuarios.add(this);
     }
     
     public void CaracteristicaCasa(){

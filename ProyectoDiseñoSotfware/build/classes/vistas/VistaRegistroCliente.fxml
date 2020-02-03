@@ -166,5 +166,15 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <HBox layoutX="415.0" layoutY="41.0" prefHeight="25.0" prefWidth="283.0">
+         <children>
+            <Label text="Usuario : ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usuario" prefHeight="25.0" prefWidth="176.0" />
+         </children>
+      </HBox>
    </children>
 </AnchorPane>
